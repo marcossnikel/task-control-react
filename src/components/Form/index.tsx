@@ -13,7 +13,7 @@ const Form = () => {
                 type="text" 
                 name="task" 
                 id="task" 
-                placeholder="new task" 
+                placeholder="task name" 
                 required />
                 </div>
 
@@ -28,7 +28,9 @@ const Form = () => {
                 max="01:30:00"
                 required />
                 </div>
-                <Button/>
+                <Button>
+                    Add Task
+                </Button>
             </form>
         )
 }

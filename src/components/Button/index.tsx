@@ -1,11 +1,14 @@
-import React from 'react';
 import style from './Botao.module.scss'
 
-const Button = () => {
+// interface text {
+//     text : string
+// }
+
+const Button = (props : any) => {
  
     return(
         <button className={style.button}>
-            Button
+            {props.children}
         </button>
     )
 }
