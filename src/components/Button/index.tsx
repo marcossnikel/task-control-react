@@ -4,11 +4,11 @@ import style from './Botao.module.scss'
 //     text : string
 // }
 
-const Button = (props : any) => {
+const Button = (text: string, type?:"button" | "submit" | "reset" | undefined) => {
  
     return(
-        <button className={style.button}>
-            {props.children}
+        <button type={type} className={style.button}>
+            {text}
         </button>
     )
 }
